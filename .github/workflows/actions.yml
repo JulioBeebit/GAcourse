@@ -4,7 +4,7 @@ name: Actions WF
 on: 
   push:
   pull_request:
-    types: [closed, assigned, opened]
+    types: [closed, assigned, reopened]
 
 jobs:
   run-github-actions:

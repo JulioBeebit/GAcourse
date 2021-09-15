@@ -2,9 +2,18 @@
 name: Actions WF
 
 on: 
-  push:
+#  push:
+  repository_dispatch:
+    types: [build]
+    
   pull_request:
     types: [closed, assigned, reopened]
+
+  
+
+
+
+
 
 jobs:
   run-github-actions:
